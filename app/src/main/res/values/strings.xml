@@ -13,6 +13,9 @@
     <string name="_19">$19</string>
     <string name="firstname">Firstname</string>
     <string name="_31_12_1970_3_30_pm">31/12/1970 3:30 PM</string>
+
     <string name="speed">Speed</string>
+=======
+>>>>>>> f88cd445089209dd8f85b6115bc6913bf0f7084d
 
 </resources>
