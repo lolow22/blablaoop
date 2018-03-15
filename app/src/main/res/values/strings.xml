@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">blablawild</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_text">Search</string>
+    <string name="search">Search</string>
+    <string name="departure">Departure</string>
+    <string name="destination">Destination</string>
+    <string name="date">Date</string>
+    <string name="name">Name</string>
+    <string name="_01_01_01">01/01/01</string>
+    <string name="search_an_itinerary">Search an itinerary</string>
+    <string name="lastname">Lastname</string>
+    <string name="_19">$19</string>
+    <string name="firstname">Firstname</string>
+    <string name="_31_12_1970_3_30_pm">31/12/1970 3:30 PM</string>
+    <string name="speed">Speed</string>
+
+</resources>
