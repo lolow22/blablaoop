@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,10 +20,12 @@ public class ItineraryListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_itinerary_list);
 
-        Intent appel = getIntent();
-        String depart = appel.getStringExtra("depart");
+        /*String depart = appel.getStringExtra("depart");
         String destination = appel.getStringExtra("destination");
-        setTitle(depart + " >> " + destination);
+        setTitle(depart + " >> " + destination);*/
+        SearchModel recupTroisEn1 = getIntent().getExtras().getParcelable("troisEnUn");
+        this.setTitle(recupTroisEn1.getDeparture()+" >> "+recupTroisEn1.getDestination());
+        Toast.makeText(this,recupTroisEn1.getDate(), Toast.LENGTH_SHORT).show();
 
         // [...]
 

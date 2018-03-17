@@ -10,8 +10,8 @@
         android:id="@+id/button_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="28dp"
         android:text="@string/search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_date" />
@@ -79,7 +79,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/date"
-<<<<<<< HEAD
+
         android:inputType="number"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"

@@ -21,19 +21,26 @@ public class Main2Activity extends AppCompatActivity {
         buttonsearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText editdeparture = findViewById(R.id.edit_departure);
-
-                EditText editdestination = findViewById(R.id.edit_destination);
+                TextView editdate = findViewById(R.id.edit_date);
+                String date = editdate.getText().toString();
+                TextView editdeparture = findViewById(R.id.edit_departure);
+                TextView editdestination = findViewById(R.id.edit_destination);
+                String departure= editdeparture.getText().toString();
                 String destination = editdestination.getText().toString();
                 if(editdeparture.length()==0 || destination.length()==0){
                     Toast.makeText(Main2Activity.this, "Enter Departure and Destination", Toast.LENGTH_SHORT).show();
                 }else {
-                    Intent appel = new Intent(Main2Activity.this, ItineraryListActivity.class);
+                   /* Intent appel = new Intent(Main2Activity.this, ItineraryListActivity.class);
                     startActivity(appel);
 
                     appel.putExtra("depart", editdeparture.getText().toString());
                     appel.putExtra("destination", destination);
-                    startActivity(appel);
+                    startActivity(appel);*/
+
+                    Intent intentSearch = new Intent(Main2Activity.this, ItineraryListActivity.class);
+                    SearchModel troisEnUn = new SearchModel(departure, destination, date);
+                    intentSearch.putExtra("troisEnUn",troisEnUn);
+                    startActivity(intentSearch);
                 }
 
 
