@@ -127,7 +127,7 @@ public class VehicleActivity extends AppCompatActivity  implements AdapterView.O
                 if (selectedItem.equals("Plane")){
                     editspeed = speed.getText().toString();
                     int speed1 = Integer.parseInt(speed.getText().toString());
-                    final VehicleBoat stat2 = new VehicleBoat(editmodel, editbrand,speed1);
+                    final VehiclePlane stat2 = new VehiclePlane(editmodel, editbrand,speed1);
                     Toast.makeText(VehicleActivity.this,stat2.getDescription(), Toast.LENGTH_SHORT).show();}
 
             }
